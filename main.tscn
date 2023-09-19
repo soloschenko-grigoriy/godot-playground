@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://bl23edj4bf6jl"]
+
+[ext_resource type="PackedScene" uid="uid://dkkcx8qcxrqbq" path="res://ball.tscn" id="1_tmobn"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_mlp8t"]
+
+[node name="Label" type="Label"]
+offset_left = 613.0
+offset_top = 182.0
+offset_right = 713.0
+offset_bottom = 213.0
+text = "Hello world"
+
+[node name="ball" parent="." instance=ExtResource("1_tmobn")]
+position = Vector2(-33, -341)
+scale = Vector2(1.33448, 1.32297)
+physics_material_override = SubResource("PhysicsMaterial_mlp8t")
+gravity_scale = 47.43
+
+[node name="ball2" parent="." instance=ExtResource("1_tmobn")]
+position = Vector2(363, -315)
+
+[node name="ball3" parent="." instance=ExtResource("1_tmobn")]
+position = Vector2(183, -318)
+
+[node name="ball4" parent="." instance=ExtResource("1_tmobn")]
+position = Vector2(-231, -338)
+
+[node name="ball5" parent="." instance=ExtResource("1_tmobn")]
+position = Vector2(-423, -335)
